@@ -1,0 +1,6 @@
+<?php
+
+  // String Operators
+  // ., .= (concatenation)
+
+  
