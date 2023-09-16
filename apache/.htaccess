@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # if request is not a file and not a directory (means it's a route)
+    # means as well, if user request file, or directory, don't process this request
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # redirect all requests to index.php
+    RewriteRule ^ index.php [L]
+    RewriteRule ^(about)$ about.php
+</IfModule>

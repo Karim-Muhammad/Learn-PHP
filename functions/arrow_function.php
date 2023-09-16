@@ -1,5 +1,8 @@
 <?php
 
+    /**
+     * Article: https://medium.com/@sirajul.anik/php-3-dots-in-method-syntax-understanding-the-first-class-callable-syntax-625c65fdbeca
+     */
 
     $y = 1;
 
@@ -11,3 +14,12 @@
 
     var_export($fn1(3));
     echo "<br/>";
+
+    // ERROR
+//    $foo = fn() =>{
+//        $message = "Hello world!";
+//        echo $message;
+//    };
+
+    // Correct
+    $foo = fn() => "Hello world!";
